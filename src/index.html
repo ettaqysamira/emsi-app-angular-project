@@ -1,13 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>EmsiApp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+<nav class="p-3">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="btn btn-outline-primary me-2" routerLink="/home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-outline-primary" routerLink="/products">Products</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

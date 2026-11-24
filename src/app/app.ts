@@ -1,13 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html',
-  standalone: true
+  styleUrl: './app.css'
 })
 export class App {
-  email: string="samira@gmail.com";
+  title = 'first-app';
 }
